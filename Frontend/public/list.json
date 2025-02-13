@@ -1,0 +1,82 @@
+[
+    {
+        "id": 1,
+        "name": "Story Book",
+        "title": "This is the story about Moana and moibi",
+        "price":0,
+        "category":"free",
+        "image":"https://img.freepik.com/free-vector/gradient-stack-books-illustration_23-2149327721.jpg?t=st=1738987693~exp=1738991293~hmac=531cee659f284dad3c29f50c182f38d5f822d3e8e99005899c9a839065f0dade&w=740"
+    },
+
+    {
+        "id": 2,
+        "name": "History Book",
+        "title": "This is the story about vikram and vetal",
+        "price":0,
+        "category":"free",
+        "image":"https://img.freepik.com/free-vector/gradient-stack-books-illustration_23-2149327721.jpg?t=st=1738987693~exp=1738991293~hmac=531cee659f284dad3c29f50c182f38d5f822d3e8e99005899c9a839065f0dade&w=740"
+    },
+
+    {
+        "id": 3,
+        "name": "Science Fiction",
+        "title": "This is the story about movie intersteller",
+        "price":1000,
+        "category":"paid",
+        "image":"https://img.freepik.com/free-vector/gradient-stack-books-illustration_23-2149327721.jpg?t=st=1738987693~exp=1738991293~hmac=531cee659f284dad3c29f50c182f38d5f822d3e8e99005899c9a839065f0dade&w=740"
+    },
+
+    {
+        "id": 4,
+        "name": "Adventure Book",
+        "title": "This is the story about Kalki and kali",
+        "price":100,
+        "category":"paid",
+        "image":"https://img.freepik.com/free-vector/gradient-stack-books-illustration_23-2149327721.jpg?t=st=1738987693~exp=1738991293~hmac=531cee659f284dad3c29f50c182f38d5f822d3e8e99005899c9a839065f0dade&w=740"
+    },
+
+    {
+        "id": 5,
+        "name": "Horror Book",
+        "title": "This is the story about Dymons of  Lanka",
+        "price":0,
+        "category":"free",
+        "image":"https://img.freepik.com/free-vector/gradient-stack-books-illustration_23-2149327721.jpg?t=st=1738987693~exp=1738991293~hmac=531cee659f284dad3c29f50c182f38d5f822d3e8e99005899c9a839065f0dade&w=740"
+    },
+
+    {
+        "id": 6,
+        "name": "sci-fi Book",
+        "title": "This is the story about Inception and dune",
+        "price":100,
+        "category":"paid",
+        "image":"https://img.freepik.com/free-vector/gradient-stack-books-illustration_23-2149327721.jpg?t=st=1738987693~exp=1738991293~hmac=531cee659f284dad3c29f50c182f38d5f822d3e8e99005899c9a839065f0dade&w=740"
+    },
+
+    {
+        "id": 7,
+        "name": "Adventure Book",
+        "title": "This is the story about Jumanji and start war",
+        "price":100,
+        "category":"paid",
+        "image":"https://img.freepik.com/free-vector/gradient-stack-books-illustration_23-2149327721.jpg?t=st=1738987693~exp=1738991293~hmac=531cee659f284dad3c29f50c182f38d5f822d3e8e99005899c9a839065f0dade&w=740"
+    },
+
+    {
+        "id": 8,
+        "name": "Story Book",
+        "title": "This is the story about Mahabharat",
+        "price":0,
+        "category":"free",
+        "image":"https://img.freepik.com/free-vector/gradient-stack-books-illustration_23-2149327721.jpg?t=st=1738987693~exp=1738991293~hmac=531cee659f284dad3c29f50c182f38d5f822d3e8e99005899c9a839065f0dade&w=740"
+    },
+
+    {
+        "id": 9,
+        "name": "Adventure Book",
+        "title": "This is the story about Moana and Moubi",
+        "price":100,
+        "category":"paid",
+        "image":"https://img.freepik.com/free-vector/gradient-stack-books-illustration_23-2149327721.jpg?t=st=1738987693~exp=1738991293~hmac=531cee659f284dad3c29f50c182f38d5f822d3e8e99005899c9a839065f0dade&w=740"
+    }
+]
