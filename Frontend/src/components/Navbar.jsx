@@ -1,4 +1,6 @@
 import React, { useState, useEffect, use } from "react";
+import Login from "./Login";
+
 
 function Navbar() {
   const [stickey, setStickey] = useState(false);
@@ -147,9 +149,12 @@ function Navbar() {
               </svg>
             </label>
             <div className="">
-              <a className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-700 duration-300 cursor-pointer dark:bg-white dark:text-black">
+              <a className="bg-black text-white px-3 py-2 rounded-md hover:bg-slate-700 duration-300 cursor-pointer dark:bg-white dark:text-black"
+                onClick={()=> document.getElementById("my_modal_3").showModal()}
+              >
                 Login
               </a>
+              <Login />
             </div>
           </div>
         </div>
