@@ -1,18 +1,49 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import Login from "./Login";
 import { useForm } from "react-hook-form";
+import axios from "axios";
+import toast from "react-hot-toast";
+// import { Navigate } from "react-router-dom";
 
 function Signup() {
+  const location = useLocation()
+  const navigate  = useNavigate()
+  const from = location.state?.from?.pathname || "/";
+
+
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data, event) => {
-    event.preventDefault(); // Ensure default form submission is prevented
-    console.log("Submitted Data:", data);
+  const onSubmit = async (data) => {
+    // event.preventDefault(); // Ensure default form submission is prevented
+    const userInfo = {
+      fullname: data.fullname,
+      email: data.email,
+      password: data.password,
+    };
+    await axios
+      .post("http://localhost:4001/user/signup", userInfo)
+      .then((res) => {
+        console.log(res.data);
+        if (res.data) {
+          toast.success("Loggedin Successfully");
+          navigate(from , {replace:true});
+          
+        } 
+        localStorage.setItem("User", JSON.stringify(res.data.user)); // it stores data into the local storage of browser so that we can use it further for checking
+        // whether user is sigup or not 
+      })
+      .catch((err) => {
+        if (err.response) {
+          console.log(err);
+          toast.error("Error: " +err.response.data.message);
+         
+        }
+      });
   };
 
   return (
@@ -33,17 +64,17 @@ function Signup() {
 
               {/* username */}
               <div className="mt-6">
-                <span>username</span>
+                <span>Fullname</span>
                 <br />
                 <input
                   type="text"
-                  placeholder="username"
+                  placeholder="fullname"
                   className="w-80 px-3  h-8 border rounded-md mt-2 outline-none"
-                  {...register("username", {
-                    required: "username is required",
+                  {...register("fullname", {
+                    required: "fullname is required",
                   })}
                 />
-                {errors.username && (
+                {errors.fullname && (
                   <p className="text-red-500 text-sm">
                     {errors.username.message}
                   </p>
