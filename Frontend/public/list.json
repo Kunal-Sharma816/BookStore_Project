@@ -37,7 +37,7 @@
 
     {
         "id": 5,
-        "name": "Horror Book",
+        "name": "The knight of seven kingdom",
         "title": "This is the story about Dymons of  Lanka",
         "price":0,
         "category":"free",
@@ -46,7 +46,7 @@
 
     {
         "id": 6,
-        "name": "sci-fi Book",
+        "name": "Science Fiction",
         "title": "This is the story about Inception and dune",
         "price":100,
         "category":"paid",

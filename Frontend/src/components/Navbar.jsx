@@ -53,6 +53,9 @@ function Navbar() {
       <li>
         <a href="/about">About</a>
       </li>
+      <li>
+        <a href = "/cart">Cart</a>
+      </li>
     </>
   );
   return (
